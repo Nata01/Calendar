@@ -51,7 +51,7 @@ public class Calendar {
     }
 
     private void printWeekend(int j) {
-        System.out.printf("\u001B[36m%3s\u001B[0m ", j);
+        System.out.printf("\u001B[31m%3s\u001B[0m ", j);
     }
 
     private void printHighlightedDay(int j) {
@@ -61,7 +61,7 @@ public class Calendar {
     private void printHeaderOfMonth() {
         List<String> dayList = Arrays.asList("Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat");
         for (String day : dayList) {
-            System.out.printf("\u001B[36m%3s\u001B[0m ", day);
+            System.out.printf("\u001B[36m%3s \u001B[0m", day);
         }
         System.out.println();
     }
